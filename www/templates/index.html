@@ -3,7 +3,7 @@
         <form class="list">
             <label class="item item-input" name="Адрес назначения">
                 <span class="input-label from">Откуда</span>
-                <input type="text" ng-model="from" placeholder="Ваше местоплолжение">
+                <input type="text" g-places-autocomplete ng-model="from" placeholder="Ваше местоплолжение">
             </label>
             <label class="item item-input">
                 <span class="input-label">Куда</span>
@@ -25,7 +25,5 @@
         <img src="img/map.png" width="100%" height="auto" style="width: 100%; height: auto;">
         <button ng-disabled="from==''" href="#/order" class=" button button-positive button-clear button-block button-large button-full" ng-click="addOrder(from,to)">Вызывать такси!</button>
     </ion-content>
-
-
 
 </ion-view>

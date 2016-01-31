@@ -4,7 +4,6 @@
 }
 
 .status.ng-enter,
-.button,
 .item-thumbnail-left {
     -webkit-animation: fadeInLeft 1s;
     animation: fadeInLeft 1s;
