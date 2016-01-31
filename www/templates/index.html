@@ -1,0 +1,31 @@
+<ion-view title="Заказать такси">
+    <ion-content overflow-scroll="true" padding="false" scroll="false" class="has-header">
+        <form class="list">
+            <label class="item item-input" name="Адрес назначения">
+                <span class="input-label from">Откуда</span>
+                <input type="text" ng-model="from" placeholder="Ваше местоплолжение">
+            </label>
+            <label class="item item-input">
+                <span class="input-label">Куда</span>
+                <input type="text" ng-model="to" placeholder="Адрес назначения">
+            </label>
+            <ion-item class="item-divider"></ion-item>
+            <ion-item class="range range-positive">Искать в радиусе
+                <input type="range" value="5" min="0" max="10">
+            </ion-item>
+        </form>
+
+        <ion-list>
+            <ion-item ng-if="order.status==1||order.status==2&&order.$id==currentOrderId" ng-repeat="order in inProgressOrders">
+                {{order.$id}}-{{order.from}}-{{order.to}}{{order.driver}}
+                <button ng-click="inProgressOrders.$remove(order)">X-{{order.status}}</button>
+            </ion-item>
+        </ion-list>
+
+        <img src="img/map.png" width="100%" height="auto" style="width: 100%; height: auto;">
+        <button ng-disabled="from==''" href="#/order" class=" button button-positive button-clear button-block button-large button-full" ng-click="addOrder(from,to)">Вызывать такси!</button>
+    </ion-content>
+
+
+
+</ion-view>
