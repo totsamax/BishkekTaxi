@@ -5,8 +5,8 @@ angular.module('app.controllers', ['ionic', 'ngCordova', 'ionic-ratings', 'googl
 
         $scope.answers = '';
         $scope.options = {
-            types: '(cities)',
-            country: 'ca'
+            componentRestrictions: { country: 'kg' },
+            types: ['geocode'] 
         };
         $scope.lat = '';
         $scope.long = '';
@@ -29,8 +29,9 @@ angular.module('app.controllers', ['ionic', 'ngCordova', 'ionic-ratings', 'googl
         navigator.geolocation.getCurrentPosition(success, error);
 
         $scope.addOrder = function (from, to) {
+            console.log(from);
             $scope.newOrders.$add({
-                "from": from,
+                "from": from.formatted_address,
                 "to": to,
                 "lat": $scope.lat,
                 "long": $scope.long,

@@ -3,9 +3,9 @@
         <form class="list">
             <label class="item item-input" name="Адрес назначения">
                 <span class="input-label from">Откуда</span>
-                <input type="text" g-places-autocomplete ng-model="from" placeholder="Ваше местоплолжение">
+                <input type="text" g-places-autocomplete ng-model="from" options="options" placeholder="Ваше местоплолжение">
             </label>
-            <label class="item item-input">
+            <label class="item item-input" ng-if="from">
                 <span class="input-label">Куда</span>
                 <input type="text" ng-model="to" placeholder="Адрес назначения">
             </label>
