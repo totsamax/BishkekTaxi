@@ -21,9 +21,10 @@
                 <button ng-click="inProgressOrders.$remove(order)">X-{{order.status}}</button>
             </ion-item>
         </ion-list>
-
-        <img src="img/map.png" width="100%" height="auto" style="width: 100%; height: auto;">
-        <button ng-disabled="from==''" href="#/order" class=" button button-positive button-clear button-block button-large button-full" ng-click="addOrder(from,to)">Вызывать такси!</button>
+        
+<leaflet markers="markers" center="center" width="100%" height="300px"></leaflet>
+        <button ng-disabled="from==''" href="#/order" class=" button button-positive button-clear button-block button-large button-full"
+        ng-click="addOrder(from,to)">Вызывать такси!</button>
     </ion-content>
 
 
