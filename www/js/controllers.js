@@ -1,13 +1,17 @@
-angular.module('app.controllers', ['ionic', 'ngCordova', 'ionic-ratings', 'google.places'])
+
+angular.module('app.controllers', ['ionic', 'ngCordova', 'ionic-ratings', 'leaflet-directive', 'google.places'])
+
 
     .controller('indexCtrl', function ($scope, $timeout, Orders, CurrentState, $state, $ionicLoading) {
 
 
         $scope.answers = '';
+
         $scope.options = {
             componentRestrictions: { country: 'kg' },
-            types: ['geocode'] 
+            types: ['geocode']
         };
+        $scope.radius=10;
         $scope.lat = '';
         $scope.long = '';
         $scope.from = '';
@@ -16,20 +20,54 @@ angular.module('app.controllers', ['ionic', 'ngCordova', 'ionic-ratings', 'googl
         $scope.newOrders = Orders.newOrders;
         $scope.inProgressOrders = Orders.inProgressOrders;
 
+        $scope.markers = [];
+            angular.extend($scope, {
+                center: {
+                    lat: $scope.lat,
+                    lng: $scope.long,
+                    zoom: 6
+                }
+            });
+        Orders.newOrders.$watch(function () {
+            angular.forEach($scope.newOrders, function (order) {
+                console.log($scope.markers);
+                $scope.markers.push({
+                    lat: order.lat,
+                    lng: order.long,
+                    message: "Сообщение",
+                    focus: true,
+                    draggable: false
+                });
 
+            });
+        });
 
         function success(position) {
             $scope.lat = position.coords.latitude;
             $scope.long = position.coords.longitude;
-        };
+            angular.extend($scope, {
+                center: {
+                    lat: $scope.lat,
+                    lng: $scope.long,
+                    zoom: 6
+                }
+            });
+        }
 
         function error() {
-            console.log("Unable to retrieve your location");
-        };
+            angular.extend($scope, {
+                center: {
+                    lat: 0,
+                    lng: 0,
+                    zoom: 6
+                }
+            });
+        }
         navigator.geolocation.getCurrentPosition(success, error);
 
         $scope.addOrder = function (from, to) {
-            console.log(from);
+            console.log(from.formatted_address);
+            console.log($scope.long);
             $scope.newOrders.$add({
                 "from": from.formatted_address,
                 "to": to,
