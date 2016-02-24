@@ -11,7 +11,7 @@ angular.module('app.controllers', ['ionic', 'ngCordova', 'ionic-ratings', 'leafl
             componentRestrictions: { country: 'kg' },
             types: ['geocode']
         };
-        $scope.radius=10;
+        $scope.radius = 10;
         $scope.lat = '';
         $scope.long = '';
         $scope.from = '';
@@ -21,22 +21,81 @@ angular.module('app.controllers', ['ionic', 'ngCordova', 'ionic-ratings', 'leafl
         $scope.inProgressOrders = Orders.inProgressOrders;
 
         $scope.markers = [];
-            angular.extend($scope, {
-                center: {
-                    lat: $scope.lat,
-                    lng: $scope.long,
-                    zoom: 6
-                }
-            });
+
+        angular.extend($scope, {
+            center: {
+                lat: $scope.lat,
+                lng: $scope.long,
+                zoom: 6
+            },
+            defaultIcon: {
+                markerColor: 'yellow'
+            },
+            leafIcon: {
+                iconUrl: 'img/leaf-green.png',
+                shadowUrl: 'img/leaf-shadow.png',
+                iconSize: [38, 95], // size of the icon
+                shadowSize: [50, 64], // size of the shadow
+                iconAnchor: [22, 94], // point of the icon which will correspond to marker's location
+                shadowAnchor: [4, 62],  // the same for the shadow
+                popupAnchor: [-3, -76] // point from which the popup should open relative to the iconAnchor
+            },
+            orangeLeafIcon: {
+                iconUrl: 'img/leaf-orange.png',
+                shadowUrl: 'img/leaf-shadow.png',
+                iconSize: [38, 95],
+                shadowSize: [50, 64],
+                iconAnchor: [22, 94],
+                shadowAnchor: [4, 62],
+                popupAnchor: [-3, -76] // point from which the popup should open relative to the iconAnchor
+            },
+            divIcon: {
+                type: 'div',
+                iconSize: [200, 0],
+                popupAnchor: [0, 0],
+                html: 'Using <strong>Bold text as an icon</strong>:'
+            },
+            awesomeMarkerIcon: {
+                type: 'awesomeMarker',
+                icon: 'star',
+                markerColor: 'red'
+            },
+            vectorMarkerIcon: {
+                type: 'vectorMarker',
+                icon: 'tag',
+                markerColor: 'red'
+            },
+            makiMarkerIcon: {
+                type: 'makiMarker',
+                icon: 'beer',
+                color: '#f00',
+                size: "l"
+            },
+            extraMarkerIcon: {
+                type: 'extraMarker',
+                icon: 'fa-star',
+                markerColor: '#f00',
+                prefix: 'fa',
+                shape: 'circle'
+            }
+        });
         Orders.newOrders.$watch(function () {
+            var you = $scope.markers["you"];
+            $scope.markers = [];
+            $scope.markers["you"] = you;
             angular.forEach($scope.newOrders, function (order) {
-                console.log($scope.markers);
+                console.log(order);
                 $scope.markers.push({
                     lat: order.lat,
                     lng: order.long,
-                    message: "Сообщение",
-                    focus: true,
-                    draggable: false
+                    focus: false,
+                    draggable: false,
+                    message:order.from,
+                    icon: {
+                        type: 'awesomeMarker',
+                        icon: 'star',
+                        markerColor: 'orange'
+                    }
                 });
 
             });
@@ -52,6 +111,17 @@ angular.module('app.controllers', ['ionic', 'ngCordova', 'ionic-ratings', 'leafl
                     zoom: 6
                 }
             });
+            $scope.markers["you"] = {
+                lat: $scope.lat,
+                lng: $scope.long,
+                focus: true,
+                draggable: true,
+                icon: {
+                    type: 'awesomeMarker',
+                    icon: 'star',
+                    markerColor: 'red'
+                }
+            };
         }
 
         function error() {
@@ -64,12 +134,19 @@ angular.module('app.controllers', ['ionic', 'ngCordova', 'ionic-ratings', 'leafl
             });
         }
         navigator.geolocation.getCurrentPosition(success, error);
+        $scope.$on('leafletDirectiveMarker.dragend', function (event,args) {
+                $scope.markers.you.lat = args.model.lat;
+                $scope.markers.you.lng = args.model.lng;
+            console.log(args); //here am getting 12 ,80  every time
+            console.log(event); // Here i can see new coordinates
+            
+        });
 
         $scope.addOrder = function (from, to) {
             console.log(from.formatted_address);
             console.log($scope.long);
             $scope.newOrders.$add({
-                "from": from.formatted_address,
+                "from": typeof from.formatted_address !== 'undefined' ? from.formatted_address : from,
                 "to": to,
                 "lat": $scope.lat,
                 "long": $scope.long,
