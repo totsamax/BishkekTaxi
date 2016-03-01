@@ -1,6 +1,6 @@
 {
   "name": "HelloIonic",
-  "private": "true",
+  "private": true,
   "devDependencies": {
     "ionic": "driftyco/ionic-bower#1.2.4",
     "ionic-platform-web-client": "~0.2.1"
@@ -13,6 +13,7 @@
     "font-awesome": "fontawesome#~4.5.0",
     "Leaflet": "https://github.com/lvoogdt/Leaflet.awesome-markers",
     "leaflet-routing-machine": "~2.6.2",
-    "leaflet": "~0.7.7"
+    "leaflet": "~0.7.7",
+    "angularGeoFire":"~3.0.0"
   }
 }

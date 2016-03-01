@@ -1,14 +1,13 @@
-
-angular.module('app.controllers', ['ionic', 'ngCordova', 'ionic-ratings', 'leaflet-directive', 'google.places'])
-
-
-    .controller('indexCtrl', function ($scope, $timeout, Orders, CurrentState, $state, $ionicLoading) {
+angular.module('app.controllers', ['ionic', 'ngCordova', 'ionic-ratings', 'leaflet-directive', 'google.places', "angularGeoFire"])
 
 
+    .controller('indexCtrl', function ($scope, $timeout, Orders, CurrentState, $state, $ionicLoading, $geofire) {
         $scope.answers = '';
 
         $scope.options = {
-            componentRestrictions: { country: 'kg' },
+            componentRestrictions: {
+                country: 'kg'
+            },
             types: ['geocode']
         };
         $scope.radius = 10;
@@ -19,64 +18,24 @@ angular.module('app.controllers', ['ionic', 'ngCordova', 'ionic-ratings', 'leafl
         $scope.currentOrderId = CurrentState.getOrderID();
         $scope.newOrders = Orders.newOrders;
         $scope.inProgressOrders = Orders.inProgressOrders;
+        $scope.ordersGeo = Orders.ordersGeo;
+
 
         $scope.markers = [];
 
         angular.extend($scope, {
             center: {
-                lat: $scope.lat,
+                lat: $scope.lat ,
                 lng: $scope.long,
                 zoom: 6
             },
             defaultIcon: {
                 markerColor: 'yellow'
             },
-            leafIcon: {
-                iconUrl: 'img/leaf-green.png',
-                shadowUrl: 'img/leaf-shadow.png',
-                iconSize: [38, 95], // size of the icon
-                shadowSize: [50, 64], // size of the shadow
-                iconAnchor: [22, 94], // point of the icon which will correspond to marker's location
-                shadowAnchor: [4, 62],  // the same for the shadow
-                popupAnchor: [-3, -76] // point from which the popup should open relative to the iconAnchor
-            },
-            orangeLeafIcon: {
-                iconUrl: 'img/leaf-orange.png',
-                shadowUrl: 'img/leaf-shadow.png',
-                iconSize: [38, 95],
-                shadowSize: [50, 64],
-                iconAnchor: [22, 94],
-                shadowAnchor: [4, 62],
-                popupAnchor: [-3, -76] // point from which the popup should open relative to the iconAnchor
-            },
-            divIcon: {
-                type: 'div',
-                iconSize: [200, 0],
-                popupAnchor: [0, 0],
-                html: 'Using <strong>Bold text as an icon</strong>:'
-            },
             awesomeMarkerIcon: {
                 type: 'awesomeMarker',
                 icon: 'star',
                 markerColor: 'red'
-            },
-            vectorMarkerIcon: {
-                type: 'vectorMarker',
-                icon: 'tag',
-                markerColor: 'red'
-            },
-            makiMarkerIcon: {
-                type: 'makiMarker',
-                icon: 'beer',
-                color: '#f00',
-                size: "l"
-            },
-            extraMarkerIcon: {
-                type: 'extraMarker',
-                icon: 'fa-star',
-                markerColor: '#f00',
-                prefix: 'fa',
-                shape: 'circle'
             }
         });
         Orders.newOrders.$watch(function () {
@@ -90,7 +49,7 @@ angular.module('app.controllers', ['ionic', 'ngCordova', 'ionic-ratings', 'leafl
                     lng: order.long,
                     focus: false,
                     draggable: false,
-                    message:order.from,
+                    message: order.from,
                     icon: {
                         type: 'awesomeMarker',
                         icon: 'star',
@@ -134,12 +93,12 @@ angular.module('app.controllers', ['ionic', 'ngCordova', 'ionic-ratings', 'leafl
             });
         }
         navigator.geolocation.getCurrentPosition(success, error);
-        $scope.$on('leafletDirectiveMarker.dragend', function (event,args) {
-                $scope.markers.you.lat = args.model.lat;
-                $scope.markers.you.lng = args.model.lng;
+        $scope.$on('leafletDirectiveMarker.dragend', function (event, args) {
+            $scope.markers.you.lat = args.model.lat;
+            $scope.markers.you.lng = args.model.lng;
             console.log(args); //here am getting 12 ,80  every time
             console.log(event); // Here i can see new coordinates
-            
+
         });
 
         $scope.addOrder = function (from, to) {
@@ -155,6 +114,10 @@ angular.module('app.controllers', ['ionic', 'ngCordova', 'ionic-ratings', 'leafl
             }).then(function (p) {
                 $scope.currentOrderId = p.key();
                 CurrentState.setOrderID($scope.currentOrderId);
+                $scope.ordersGeo.$set("some_key", [37.771393, -122.447104])
+                    .catch(function (err) {
+                        console.error(err);
+                    });
                 $state.go('order');
             });
         };
@@ -228,11 +191,9 @@ angular.module('app.controllers', ['ionic', 'ngCordova', 'ionic-ratings', 'leafl
                 title: 'Enter Wi-Fi Password',
                 subTitle: 'Please use normal things',
                 scope: $scope,
-                buttons: [
-                    {
-                        text: 'Cancel'
-                    },
-                    {
+                buttons: [{
+                    text: 'Cancel'
+                }, {
                         text: '<b>Save</b>',
                         type: 'button-positive',
                         onTap: function (e) {
@@ -243,8 +204,7 @@ angular.module('app.controllers', ['ionic', 'ngCordova', 'ionic-ratings', 'leafl
                                 return $scope.data.wifi;
                             }
                         }
-                    }
-                ]
+                    }]
             });
 
             myPopup.then(function (res) {

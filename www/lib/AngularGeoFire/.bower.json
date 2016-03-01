@@ -32,6 +32,5 @@
   },
   "_source": "git://github.com/mikepugh/AngularGeoFire.git",
   "_target": "~3.0.0",
-  "_originalSource": "angularGeoFire",
-  "_direct": true
+  "_originalSource": "angularGeoFire"
 }

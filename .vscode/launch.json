@@ -1,0 +1,29 @@
+{
+	"version": "0.2.0",
+	"configurations": [
+		{
+			"name": "Launch index.html",
+			"type": "chrome",
+			"request": "launch",
+			"file": "${workspaceRoot}/www/index.html",
+            "runtimeExecutable":"C:/Users/totsamax/AppData/Local/Google/Chrome/Application/chrome.exe",
+            "runtimeArgs": ["--remote-debugging-port=9222"]
+		},
+		{
+			"name": "Launch localhost with sourcemaps",
+			"type": "chrome",
+			"request": "launch",
+            "url": "http://127.0.0.1:9222/"	,
+			"sourceMaps": true,
+			"webRoot": ".\\www\\",
+            "runtimeExecutable":"C:/Users/totsamax/AppData/Local/Google/Chrome/Application/chrome.exe",
+            "runtimeArgs": ["--remote-debugging-port=9222"]
+		},
+		{
+			"name": "Attach",
+			"type": "chrome",
+			"request": "attach",
+			"port": 9222
+		}
+	]
+}
