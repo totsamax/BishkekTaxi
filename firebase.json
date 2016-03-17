@@ -1,0 +1,9 @@
+{
+  "firebase": "resplendent-torch-8168",
+  "public": "www",
+  "ignore": [
+    "firebase.json",
+    "**/.*",
+    "**/node_modules/**"
+  ]
+}

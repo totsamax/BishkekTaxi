@@ -1,0 +1,990 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Machine>DEVELOP</Machine>
+    <WindowsUser>totsamax</WindowsUser>
+    <TargetPlatformIdentifier>Windows</TargetPlatformIdentifier>
+    <TargetOsVersion>6.3</TargetOsVersion>
+    <TargetOsDescription>Windows 8.1</TargetOsDescription>
+    <SolutionConfiguration>debug|anycpu</SolutionConfiguration>
+    <PackageArchitecture>neutral</PackageArchitecture>
+    <PackageIdentityName>com.ionicframework.bishkektaxi213713</PackageIdentityName>
+    <IntermediateOutputPath>C:\Users\totsamax\apps\BishkekTaxi\platforms\windows\build\windows\bld\</IntermediateOutputPath>
+  </PropertyGroup>
+  <ItemGroup>
+    <AppXManifest Include="C:\Users\totsamax\apps\BishkekTaxi\platforms\windows\build\windows\debug\anycpu\win8.1\AppxManifest.xml">
+      <PackagePath>AppxManifest.xml</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppXManifest>
+  </ItemGroup>
+  <ItemGroup>
+    <AppxPackagedFile Include="C:\Users\totsamax\apps\BishkekTaxi\platforms\windows\images\SplashScreen.scale-100.png">
+      <PackagePath>images\SplashScreen.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\totsamax\apps\BishkekTaxi\platforms\windows\images\Square150x150Logo.scale-100.png">
+      <PackagePath>images\Square150x150Logo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\totsamax\apps\BishkekTaxi\platforms\windows\images\Square30x30Logo.scale-100.png">
+      <PackagePath>images\Square30x30Logo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\totsamax\apps\BishkekTaxi\platforms\windows\images\Square310x310Logo.scale-100.png">
+      <PackagePath>images\Square310x310Logo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\totsamax\apps\BishkekTaxi\platforms\windows\images\Square44x44Logo.scale-100.png">
+      <PackagePath>images\Square44x44Logo.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\totsamax\apps\BishkekTaxi\platforms\windows\images\Square70x70Logo.scale-100.png">
+      <PackagePath>images\Square70x70Logo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\totsamax\apps\BishkekTaxi\platforms\windows\images\Square71x71Logo.scale-100.png">
+      <PackagePath>images\Square71x71Logo.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\totsamax\apps\BishkekTaxi\platforms\windows\images\StoreLogo.scale-100.png">
+      <PackagePath>images\StoreLogo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\totsamax\apps\BishkekTaxi\platforms\windows\images\Wide310x150Logo.scale-100.png">
+      <PackagePath>images\Wide310x150Logo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\totsamax\apps\BishkekTaxi\platforms\windows\www\img\map.png">
+      <PackagePath>www\img\map.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\totsamax\apps\BishkekTaxi\platforms\windows\www\img\R3qp655oSsC1YuyRfrD1_icon.png">
+      <PackagePath>www\img\R3qp655oSsC1YuyRfrD1_icon.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\totsamax\apps\BishkekTaxi\platforms\windows\www\lib\leaflet-routing-machine\dist\leaflet.routing.icons.png">
+      <PackagePath>www\lib\leaflet-routing-machine\dist\leaflet.routing.icons.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\totsamax\apps\BishkekTaxi\platforms\windows\www\lib\leaflet-routing-machine\dist\routing-icon.png">
+      <PackagePath>www\lib\leaflet-routing-machine\dist\routing-icon.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\totsamax\apps\BishkekTaxi\platforms\windows\www\lib\leaflet\dist\images\layers-2x.png">
+      <PackagePath>www\lib\leaflet\dist\images\layers-2x.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\totsamax\apps\BishkekTaxi\platforms\windows\www\lib\leaflet\dist\images\layers.png">
+      <PackagePath>www\lib\leaflet\dist\images\layers.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\totsamax\apps\BishkekTaxi\platforms\windows\www\lib\leaflet\dist\images\marker-icon-2x.png">
+      <PackagePath>www\lib\leaflet\dist\images\marker-icon-2x.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\totsamax\apps\BishkekTaxi\platforms\windows\www\lib\leaflet\dist\images\marker-icon.png">
+      <PackagePath>www\lib\leaflet\dist\images\marker-icon.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\totsamax\apps\BishkekTaxi\platforms\windows\www\lib\leaflet\dist\images\marker-shadow.png">
+      <PackagePath>www\lib\leaflet\dist\images\marker-shadow.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\totsamax\apps\BishkekTaxi\platforms\windows\www\cordova-js-src\exec.js">
+      <PackagePath>www\cordova-js-src\exec.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\totsamax\apps\BishkekTaxi\platforms\windows\www\cordova-js-src\platform.js">
+      <PackagePath>www\cordova-js-src\platform.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\totsamax\apps\BishkekTaxi\platforms\windows\www\cordova.js">
+      <PackagePath>www\cordova.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\totsamax\apps\BishkekTaxi\platforms\windows\www\js\angular-locale_ru.js">
+      <PackagePath>www\js\angular-locale_ru.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\totsamax\apps\BishkekTaxi\platforms\windows\www\js\app.js">
+      <PackagePath>www\js\app.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\totsamax\apps\BishkekTaxi\platforms\windows\www\js\controllers.js">
+      <PackagePath>www\js\controllers.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\totsamax\apps\BishkekTaxi\platforms\windows\www\js\directives.js">
+      <PackagePath>www\js\directives.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\totsamax\apps\BishkekTaxi\platforms\windows\www\js\routes.js">
+      <PackagePath>www\js\routes.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\totsamax\apps\BishkekTaxi\platforms\windows\www\js\services.js">
+      <PackagePath>www\js\services.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\totsamax\apps\BishkekTaxi\platforms\windows\www\lib\angular-animate\angular-animate.js">
+      <PackagePath>www\lib\angular-animate\angular-animate.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\totsamax\apps\BishkekTaxi\platforms\windows\www\lib\angular-animate\angular-animate.min.js">
+      <PackagePath>www\lib\angular-animate\angular-animate.min.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\totsamax\apps\BishkekTaxi\platforms\windows\www\lib\angular-animate\index.js">
+      <PackagePath>www\lib\angular-animate\index.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\totsamax\apps\BishkekTaxi\platforms\windows\www\lib\angular-google-places-autocomplete\dist\autocomplete.min.js">
+      <PackagePath>www\lib\angular-google-places-autocomplete\dist\autocomplete.min.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\totsamax\apps\BishkekTaxi\platforms\windows\www\lib\angular-google-places-autocomplete\Gruntfile.js">
+      <PackagePath>www\lib\angular-google-places-autocomplete\Gruntfile.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\totsamax\apps\BishkekTaxi\platforms\windows\www\lib\angular-google-places-autocomplete\karma.conf.js">
+      <PackagePath>www\lib\angular-google-places-autocomplete\karma.conf.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\totsamax\apps\BishkekTaxi\platforms\windows\www\lib\angular-google-places-autocomplete\src\autocomplete.js">
+      <PackagePath>www\lib\angular-google-places-autocomplete\src\autocomplete.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\totsamax\apps\BishkekTaxi\platforms\windows\www\lib\angular-google-places-autocomplete\test\autocomplete-test.js">
+      <PackagePath>www\lib\angular-google-places-autocomplete\test\autocomplete-test.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\totsamax\apps\BishkekTaxi\platforms\windows\www\lib\angular-sanitize\angular-sanitize.js">
+      <PackagePath>www\lib\angular-sanitize\angular-sanitize.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\totsamax\apps\BishkekTaxi\platforms\windows\www\lib\angular-sanitize\angular-sanitize.min.js">
+      <PackagePath>www\lib\angular-sanitize\angular-sanitize.min.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\totsamax\apps\BishkekTaxi\platforms\windows\www\lib\angular-sanitize\index.js">
+      <PackagePath>www\lib\angular-sanitize\index.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\totsamax\apps\BishkekTaxi\platforms\windows\www\lib\angular-ui-router\release\angular-ui-router.js">
+      <PackagePath>www\lib\angular-ui-router\release\angular-ui-router.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\totsamax\apps\BishkekTaxi\platforms\windows\www\lib\angular-ui-router\release\angular-ui-router.min.js">
+      <PackagePath>www\lib\angular-ui-router\release\angular-ui-router.min.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\totsamax\apps\BishkekTaxi\platforms\windows\www\lib\angular-ui-router\src\common.js">
+      <PackagePath>www\lib\angular-ui-router\src\common.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\totsamax\apps\BishkekTaxi\platforms\windows\www\lib\angular-ui-router\src\resolve.js">
+      <PackagePath>www\lib\angular-ui-router\src\resolve.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\totsamax\apps\BishkekTaxi\platforms\windows\www\lib\angular-ui-router\src\state.js">
+      <PackagePath>www\lib\angular-ui-router\src\state.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\totsamax\apps\BishkekTaxi\platforms\windows\www\lib\angular-ui-router\src\stateDirectives.js">
+      <PackagePath>www\lib\angular-ui-router\src\stateDirectives.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\totsamax\apps\BishkekTaxi\platforms\windows\www\lib\angular-ui-router\src\stateFilters.js">
+      <PackagePath>www\lib\angular-ui-router\src\stateFilters.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\totsamax\apps\BishkekTaxi\platforms\windows\www\lib\angular-ui-router\src\templateFactory.js">
+      <PackagePath>www\lib\angular-ui-router\src\templateFactory.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\totsamax\apps\BishkekTaxi\platforms\windows\www\lib\angular-ui-router\src\urlMatcherFactory.js">
+      <PackagePath>www\lib\angular-ui-router\src\urlMatcherFactory.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\totsamax\apps\BishkekTaxi\platforms\windows\www\lib\angular-ui-router\src\urlRouter.js">
+      <PackagePath>www\lib\angular-ui-router\src\urlRouter.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\totsamax\apps\BishkekTaxi\platforms\windows\www\lib\angular-ui-router\src\view.js">
+      <PackagePath>www\lib\angular-ui-router\src\view.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\totsamax\apps\BishkekTaxi\platforms\windows\www\lib\angular-ui-router\src\viewDirective.js">
+      <PackagePath>www\lib\angular-ui-router\src\viewDirective.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\totsamax\apps\BishkekTaxi\platforms\windows\www\lib\angular-ui-router\src\viewScroll.js">
+      <PackagePath>www\lib\angular-ui-router\src\viewScroll.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\totsamax\apps\BishkekTaxi\platforms\windows\www\lib\angularfire\dist\angularfire.js">
+      <PackagePath>www\lib\angularfire\dist\angularfire.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\totsamax\apps\BishkekTaxi\platforms\windows\www\lib\angularfire\dist\angularfire.min.js">
+      <PackagePath>www\lib\angularfire\dist\angularfire.min.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\totsamax\apps\BishkekTaxi\platforms\windows\www\lib\angularfire\index.js">
+      <PackagePath>www\lib\angularfire\index.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\totsamax\apps\BishkekTaxi\platforms\windows\www\lib\angularGeoFire\dist\angularGeoFire.js">
+      <PackagePath>www\lib\angularGeoFire\dist\angularGeoFire.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\totsamax\apps\BishkekTaxi\platforms\windows\www\lib\angularGeoFire\dist\angularGeoFire.min.js">
+      <PackagePath>www\lib\angularGeoFire\dist\angularGeoFire.min.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\totsamax\apps\BishkekTaxi\platforms\windows\www\lib\angularGeoFire\Gruntfile.js">
+      <PackagePath>www\lib\angularGeoFire\Gruntfile.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\totsamax\apps\BishkekTaxi\platforms\windows\www\lib\angularGeoFire\src\angularGeoFire.js">
+      <PackagePath>www\lib\angularGeoFire\src\angularGeoFire.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\totsamax\apps\BishkekTaxi\platforms\windows\www\lib\angular\angular.js">
+      <PackagePath>www\lib\angular\angular.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\totsamax\apps\BishkekTaxi\platforms\windows\www\lib\angular\angular.min.js">
+      <PackagePath>www\lib\angular\angular.min.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\totsamax\apps\BishkekTaxi\platforms\windows\www\lib\angular\index.js">
+      <PackagePath>www\lib\angular\index.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\totsamax\apps\BishkekTaxi\platforms\windows\www\lib\firebase\firebase-debug.js">
+      <PackagePath>www\lib\firebase\firebase-debug.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\totsamax\apps\BishkekTaxi\platforms\windows\www\lib\firebase\firebase.js">
+      <PackagePath>www\lib\firebase\firebase.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\totsamax\apps\BishkekTaxi\platforms\windows\www\lib\geofire\dist\geofire.js">
+      <PackagePath>www\lib\geofire\dist\geofire.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\totsamax\apps\BishkekTaxi\platforms\windows\www\lib\geofire\dist\geofire.min.js">
+      <PackagePath>www\lib\geofire\dist\geofire.min.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\totsamax\apps\BishkekTaxi\platforms\windows\www\lib\geofire\migration\migrateToV3.js">
+      <PackagePath>www\lib\geofire\migration\migrateToV3.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\totsamax\apps\BishkekTaxi\platforms\windows\www\lib\ionic-platform-web-client\build\config.js">
+      <PackagePath>www\lib\ionic-platform-web-client\build\config.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\totsamax\apps\BishkekTaxi\platforms\windows\www\lib\ionic-platform-web-client\dist\ionic.io.bundle.js">
+      <PackagePath>www\lib\ionic-platform-web-client\dist\ionic.io.bundle.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\totsamax\apps\BishkekTaxi\platforms\windows\www\lib\ionic-platform-web-client\dist\ionic.io.bundle.min.js">
+      <PackagePath>www\lib\ionic-platform-web-client\dist\ionic.io.bundle.min.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\totsamax\apps\BishkekTaxi\platforms\windows\www\lib\ionic-platform-web-client\gulpfile.js">
+      <PackagePath>www\lib\ionic-platform-web-client\gulpfile.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\totsamax\apps\BishkekTaxi\platforms\windows\www\lib\ionic-platform-web-client\src\analytics\analytics.js">
+      <PackagePath>www\lib\ionic-platform-web-client\src\analytics\analytics.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\totsamax\apps\BishkekTaxi\platforms\windows\www\lib\ionic-platform-web-client\src\analytics\angular.js">
+      <PackagePath>www\lib\ionic-platform-web-client\src\analytics\angular.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\totsamax\apps\BishkekTaxi\platforms\windows\www\lib\ionic-platform-web-client\src\analytics\es5.js">
+      <PackagePath>www\lib\ionic-platform-web-client\src\analytics\es5.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\totsamax\apps\BishkekTaxi\platforms\windows\www\lib\ionic-platform-web-client\src\analytics\serializers.js">
+      <PackagePath>www\lib\ionic-platform-web-client\src\analytics\serializers.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\totsamax\apps\BishkekTaxi\platforms\windows\www\lib\ionic-platform-web-client\src\analytics\storage.js">
+      <PackagePath>www\lib\ionic-platform-web-client\src\analytics\storage.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\totsamax\apps\BishkekTaxi\platforms\windows\www\lib\ionic-platform-web-client\src\core\angular.js">
+      <PackagePath>www\lib\ionic-platform-web-client\src\core\angular.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\totsamax\apps\BishkekTaxi\platforms\windows\www\lib\ionic-platform-web-client\src\core\app.js">
+      <PackagePath>www\lib\ionic-platform-web-client\src\core\app.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\totsamax\apps\BishkekTaxi\platforms\windows\www\lib\ionic-platform-web-client\src\core\core.js">
+      <PackagePath>www\lib\ionic-platform-web-client\src\core\core.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\totsamax\apps\BishkekTaxi\platforms\windows\www\lib\ionic-platform-web-client\src\core\data-types.js">
+      <PackagePath>www\lib\ionic-platform-web-client\src\core\data-types.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\totsamax\apps\BishkekTaxi\platforms\windows\www\lib\ionic-platform-web-client\src\core\es5.js">
+      <PackagePath>www\lib\ionic-platform-web-client\src\core\es5.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\totsamax\apps\BishkekTaxi\platforms\windows\www\lib\ionic-platform-web-client\src\core\events.js">
+      <PackagePath>www\lib\ionic-platform-web-client\src\core\events.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\totsamax\apps\BishkekTaxi\platforms\windows\www\lib\ionic-platform-web-client\src\core\logger.js">
+      <PackagePath>www\lib\ionic-platform-web-client\src\core\logger.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\totsamax\apps\BishkekTaxi\platforms\windows\www\lib\ionic-platform-web-client\src\core\promise.js">
+      <PackagePath>www\lib\ionic-platform-web-client\src\core\promise.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\totsamax\apps\BishkekTaxi\platforms\windows\www\lib\ionic-platform-web-client\src\core\request.js">
+      <PackagePath>www\lib\ionic-platform-web-client\src\core\request.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\totsamax\apps\BishkekTaxi\platforms\windows\www\lib\ionic-platform-web-client\src\core\settings.js">
+      <PackagePath>www\lib\ionic-platform-web-client\src\core\settings.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\totsamax\apps\BishkekTaxi\platforms\windows\www\lib\ionic-platform-web-client\src\core\storage.js">
+      <PackagePath>www\lib\ionic-platform-web-client\src\core\storage.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\totsamax\apps\BishkekTaxi\platforms\windows\www\lib\ionic-platform-web-client\src\core\user.js">
+      <PackagePath>www\lib\ionic-platform-web-client\src\core\user.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\totsamax\apps\BishkekTaxi\platforms\windows\www\lib\ionic-platform-web-client\src\deploy\angular.js">
+      <PackagePath>www\lib\ionic-platform-web-client\src\deploy\angular.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\totsamax\apps\BishkekTaxi\platforms\windows\www\lib\ionic-platform-web-client\src\deploy\deploy.js">
+      <PackagePath>www\lib\ionic-platform-web-client\src\deploy\deploy.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\totsamax\apps\BishkekTaxi\platforms\windows\www\lib\ionic-platform-web-client\src\deploy\es5.js">
+      <PackagePath>www\lib\ionic-platform-web-client\src\deploy\es5.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\totsamax\apps\BishkekTaxi\platforms\windows\www\lib\ionic-platform-web-client\src\push\angular.js">
+      <PackagePath>www\lib\ionic-platform-web-client\src\push\angular.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\totsamax\apps\BishkekTaxi\platforms\windows\www\lib\ionic-platform-web-client\src\push\es5.js">
+      <PackagePath>www\lib\ionic-platform-web-client\src\push\es5.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\totsamax\apps\BishkekTaxi\platforms\windows\www\lib\ionic-platform-web-client\src\push\push-dev.js">
+      <PackagePath>www\lib\ionic-platform-web-client\src\push\push-dev.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\totsamax\apps\BishkekTaxi\platforms\windows\www\lib\ionic-platform-web-client\src\push\push-message.js">
+      <PackagePath>www\lib\ionic-platform-web-client\src\push\push-message.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\totsamax\apps\BishkekTaxi\platforms\windows\www\lib\ionic-platform-web-client\src\push\push-token.js">
+      <PackagePath>www\lib\ionic-platform-web-client\src\push\push-token.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\totsamax\apps\BishkekTaxi\platforms\windows\www\lib\ionic-platform-web-client\src\push\push.js">
+      <PackagePath>www\lib\ionic-platform-web-client\src\push\push.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\totsamax\apps\BishkekTaxi\platforms\windows\www\lib\ionic-ratings\dist\ionic-ratings.min.js">
+      <PackagePath>www\lib\ionic-ratings\dist\ionic-ratings.min.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\totsamax\apps\BishkekTaxi\platforms\windows\www\lib\ionic-ratings\gulpfile.js">
+      <PackagePath>www\lib\ionic-ratings\gulpfile.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\totsamax\apps\BishkekTaxi\platforms\windows\www\lib\ionic-ratings\src\ionic-ratings.js">
+      <PackagePath>www\lib\ionic-ratings\src\ionic-ratings.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\totsamax\apps\BishkekTaxi\platforms\windows\www\lib\ionic\js\ionic-angular.js">
+      <PackagePath>www\lib\ionic\js\ionic-angular.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\totsamax\apps\BishkekTaxi\platforms\windows\www\lib\ionic\js\ionic-angular.min.js">
+      <PackagePath>www\lib\ionic\js\ionic-angular.min.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\totsamax\apps\BishkekTaxi\platforms\windows\www\lib\ionic\js\ionic.bundle.js">
+      <PackagePath>www\lib\ionic\js\ionic.bundle.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\totsamax\apps\BishkekTaxi\platforms\windows\www\lib\ionic\js\ionic.bundle.min.js">
+      <PackagePath>www\lib\ionic\js\ionic.bundle.min.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\totsamax\apps\BishkekTaxi\platforms\windows\www\lib\ionic\js\ionic.js">
+      <PackagePath>www\lib\ionic\js\ionic.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\totsamax\apps\BishkekTaxi\platforms\windows\www\lib\ionic\js\ionic.min.js">
+      <PackagePath>www\lib\ionic\js\ionic.min.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\totsamax\apps\BishkekTaxi\platforms\windows\www\lib\leaflet-routing-machine\dist\leaflet-routing-machine.js">
+      <PackagePath>www\lib\leaflet-routing-machine\dist\leaflet-routing-machine.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\totsamax\apps\BishkekTaxi\platforms\windows\www\lib\leaflet-routing-machine\dist\leaflet-routing-machine.min.js">
+      <PackagePath>www\lib\leaflet-routing-machine\dist\leaflet-routing-machine.min.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\totsamax\apps\BishkekTaxi\platforms\windows\www\lib\leaflet-routing-machine\examples\Control.Geocoder.js">
+      <PackagePath>www\lib\leaflet-routing-machine\examples\Control.Geocoder.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\totsamax\apps\BishkekTaxi\platforms\windows\www\lib\leaflet-routing-machine\examples\index.js">
+      <PackagePath>www\lib\leaflet-routing-machine\examples\index.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\totsamax\apps\BishkekTaxi\platforms\windows\www\lib\leaflet\dist\leaflet-src.js">
+      <PackagePath>www\lib\leaflet\dist\leaflet-src.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\totsamax\apps\BishkekTaxi\platforms\windows\www\lib\leaflet\dist\leaflet.js">
+      <PackagePath>www\lib\leaflet\dist\leaflet.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\totsamax\apps\BishkekTaxi\platforms\windows\www\lib\leaflet\Jakefile.js">
+      <PackagePath>www\lib\leaflet\Jakefile.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\totsamax\apps\BishkekTaxi\platforms\windows\www\lib\ngCordova\dist\ng-cordova-mocks.js">
+      <PackagePath>www\lib\ngCordova\dist\ng-cordova-mocks.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\totsamax\apps\BishkekTaxi\platforms\windows\www\lib\ngCordova\dist\ng-cordova-mocks.min.js">
+      <PackagePath>www\lib\ngCordova\dist\ng-cordova-mocks.min.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\totsamax\apps\BishkekTaxi\platforms\windows\www\lib\ngCordova\dist\ng-cordova.js">
+      <PackagePath>www\lib\ngCordova\dist\ng-cordova.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\totsamax\apps\BishkekTaxi\platforms\windows\www\lib\ngCordova\dist\ng-cordova.min.js">
+      <PackagePath>www\lib\ngCordova\dist\ng-cordova.min.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\totsamax\apps\BishkekTaxi\platforms\windows\www\lib\rsvp\rsvp.js">
+      <PackagePath>www\lib\rsvp\rsvp.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\totsamax\apps\BishkekTaxi\platforms\windows\www\lib\rsvp\rsvp.min.js">
+      <PackagePath>www\lib\rsvp\rsvp.min.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\totsamax\apps\BishkekTaxi\platforms\windows\www\WinJS\js\base.js">
+      <PackagePath>www\WinJS\js\base.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\totsamax\apps\BishkekTaxi\platforms\windows\www\css\mycss.css">
+      <PackagePath>www\css\mycss.css</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\totsamax\apps\BishkekTaxi\platforms\windows\www\lib\angular-google-places-autocomplete\dist\autocomplete.min.css">
+      <PackagePath>www\lib\angular-google-places-autocomplete\dist\autocomplete.min.css</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\totsamax\apps\BishkekTaxi\platforms\windows\www\lib\angular-google-places-autocomplete\src\autocomplete.css">
+      <PackagePath>www\lib\angular-google-places-autocomplete\src\autocomplete.css</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\totsamax\apps\BishkekTaxi\platforms\windows\www\lib\angular\angular-csp.css">
+      <PackagePath>www\lib\angular\angular-csp.css</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\totsamax\apps\BishkekTaxi\platforms\windows\www\lib\font-awesome\css\font-awesome.css">
+      <PackagePath>www\lib\font-awesome\css\font-awesome.css</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\totsamax\apps\BishkekTaxi\platforms\windows\www\lib\font-awesome\css\font-awesome.min.css">
+      <PackagePath>www\lib\font-awesome\css\font-awesome.min.css</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\totsamax\apps\BishkekTaxi\platforms\windows\www\lib\ionic\css\ionic.css">
+      <PackagePath>www\lib\ionic\css\ionic.css</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\totsamax\apps\BishkekTaxi\platforms\windows\www\lib\ionic\css\ionic.min.css">
+      <PackagePath>www\lib\ionic\css\ionic.min.css</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\totsamax\apps\BishkekTaxi\platforms\windows\www\lib\leaflet-control-geocoder\Control.Geocoder.css">
+      <PackagePath>www\lib\leaflet-control-geocoder\Control.Geocoder.css</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\totsamax\apps\BishkekTaxi\platforms\windows\www\lib\leaflet-routing-machine\dist\leaflet-routing-machine.css">
+      <PackagePath>www\lib\leaflet-routing-machine\dist\leaflet-routing-machine.css</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\totsamax\apps\BishkekTaxi\platforms\windows\www\lib\leaflet-routing-machine\examples\index.css">
+      <PackagePath>www\lib\leaflet-routing-machine\examples\index.css</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\totsamax\apps\BishkekTaxi\platforms\windows\www\lib\leaflet\dist\leaflet.css">
+      <PackagePath>www\lib\leaflet\dist\leaflet.css</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\totsamax\apps\BishkekTaxi\platforms\windows\www\index.html">
+      <PackagePath>www\index.html</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\totsamax\apps\BishkekTaxi\platforms\windows\www\lib\angular-google-places-autocomplete\example\basic.html">
+      <PackagePath>www\lib\angular-google-places-autocomplete\example\basic.html</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\totsamax\apps\BishkekTaxi\platforms\windows\www\lib\angular-google-places-autocomplete\example\custom-places.html">
+      <PackagePath>www\lib\angular-google-places-autocomplete\example\custom-places.html</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\totsamax\apps\BishkekTaxi\platforms\windows\www\lib\angular-google-places-autocomplete\example\force-selection.html">
+      <PackagePath>www\lib\angular-google-places-autocomplete\example\force-selection.html</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\totsamax\apps\BishkekTaxi\platforms\windows\www\lib\angular-google-places-autocomplete\example\options.html">
+      <PackagePath>www\lib\angular-google-places-autocomplete\example\options.html</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\totsamax\apps\BishkekTaxi\platforms\windows\www\lib\angular-google-places-autocomplete\example\scroll.html">
+      <PackagePath>www\lib\angular-google-places-autocomplete\example\scroll.html</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\totsamax\apps\BishkekTaxi\platforms\windows\www\lib\leaflet-routing-machine\examples\index.html">
+      <PackagePath>www\lib\leaflet-routing-machine\examples\index.html</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\totsamax\apps\BishkekTaxi\platforms\windows\www\templates\index.html">
+      <PackagePath>www\templates\index.html</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\totsamax\apps\BishkekTaxi\platforms\windows\www\templates\login.html">
+      <PackagePath>www\templates\login.html</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\totsamax\apps\BishkekTaxi\platforms\windows\www\templates\order.html">
+      <PackagePath>www\templates\order.html</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\totsamax\apps\BishkekTaxi\platforms\windows\www\lib\angular-animate\.bower.json">
+      <PackagePath>www\lib\angular-animate\.bower.json</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\totsamax\apps\BishkekTaxi\platforms\windows\www\lib\angular-animate\bower.json">
+      <PackagePath>www\lib\angular-animate\bower.json</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\totsamax\apps\BishkekTaxi\platforms\windows\www\lib\angular-animate\package.json">
+      <PackagePath>www\lib\angular-animate\package.json</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\totsamax\apps\BishkekTaxi\platforms\windows\www\lib\angular-google-places-autocomplete\.bower.json">
+      <PackagePath>www\lib\angular-google-places-autocomplete\.bower.json</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\totsamax\apps\BishkekTaxi\platforms\windows\www\lib\angular-google-places-autocomplete\bower.json">
+      <PackagePath>www\lib\angular-google-places-autocomplete\bower.json</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\totsamax\apps\BishkekTaxi\platforms\windows\www\lib\angular-google-places-autocomplete\package.json">
+      <PackagePath>www\lib\angular-google-places-autocomplete\package.json</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\totsamax\apps\BishkekTaxi\platforms\windows\www\lib\angular-sanitize\.bower.json">
+      <PackagePath>www\lib\angular-sanitize\.bower.json</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\totsamax\apps\BishkekTaxi\platforms\windows\www\lib\angular-sanitize\bower.json">
+      <PackagePath>www\lib\angular-sanitize\bower.json</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\totsamax\apps\BishkekTaxi\platforms\windows\www\lib\angular-sanitize\package.json">
+      <PackagePath>www\lib\angular-sanitize\package.json</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\totsamax\apps\BishkekTaxi\platforms\windows\www\lib\angular-ui-router\.bower.json">
+      <PackagePath>www\lib\angular-ui-router\.bower.json</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\totsamax\apps\BishkekTaxi\platforms\windows\www\lib\angular-ui-router\bower.json">
+      <PackagePath>www\lib\angular-ui-router\bower.json</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\totsamax\apps\BishkekTaxi\platforms\windows\www\lib\angularfire\.bower.json">
+      <PackagePath>www\lib\angularfire\.bower.json</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\totsamax\apps\BishkekTaxi\platforms\windows\www\lib\angularfire\bower.json">
+      <PackagePath>www\lib\angularfire\bower.json</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\totsamax\apps\BishkekTaxi\platforms\windows\www\lib\angularGeoFire\.bower.json">
+      <PackagePath>www\lib\angularGeoFire\.bower.json</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\totsamax\apps\BishkekTaxi\platforms\windows\www\lib\angularGeoFire\bower.json">
+      <PackagePath>www\lib\angularGeoFire\bower.json</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\totsamax\apps\BishkekTaxi\platforms\windows\www\lib\angularGeoFire\package.json">
+      <PackagePath>www\lib\angularGeoFire\package.json</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\totsamax\apps\BishkekTaxi\platforms\windows\www\lib\angular\.bower.json">
+      <PackagePath>www\lib\angular\.bower.json</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\totsamax\apps\BishkekTaxi\platforms\windows\www\lib\angular\bower.json">
+      <PackagePath>www\lib\angular\bower.json</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\totsamax\apps\BishkekTaxi\platforms\windows\www\lib\angular\package.json">
+      <PackagePath>www\lib\angular\package.json</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\totsamax\apps\BishkekTaxi\platforms\windows\www\lib\firebase\.bower.json">
+      <PackagePath>www\lib\firebase\.bower.json</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\totsamax\apps\BishkekTaxi\platforms\windows\www\lib\firebase\bower.json">
+      <PackagePath>www\lib\firebase\bower.json</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\totsamax\apps\BishkekTaxi\platforms\windows\www\lib\font-awesome\.bower.json">
+      <PackagePath>www\lib\font-awesome\.bower.json</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\totsamax\apps\BishkekTaxi\platforms\windows\www\lib\font-awesome\bower.json">
+      <PackagePath>www\lib\font-awesome\bower.json</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\totsamax\apps\BishkekTaxi\platforms\windows\www\lib\geofire\.bower.json">
+      <PackagePath>www\lib\geofire\.bower.json</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\totsamax\apps\BishkekTaxi\platforms\windows\www\lib\geofire\bower.json">
+      <PackagePath>www\lib\geofire\bower.json</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\totsamax\apps\BishkekTaxi\platforms\windows\www\lib\ionic-platform-web-client\.bower.json">
+      <PackagePath>www\lib\ionic-platform-web-client\.bower.json</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\totsamax\apps\BishkekTaxi\platforms\windows\www\lib\ionic-platform-web-client\bower.json">
+      <PackagePath>www\lib\ionic-platform-web-client\bower.json</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\totsamax\apps\BishkekTaxi\platforms\windows\www\lib\ionic-platform-web-client\package.json">
+      <PackagePath>www\lib\ionic-platform-web-client\package.json</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\totsamax\apps\BishkekTaxi\platforms\windows\www\lib\ionic-ratings\.bower.json">
+      <PackagePath>www\lib\ionic-ratings\.bower.json</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\totsamax\apps\BishkekTaxi\platforms\windows\www\lib\ionic-ratings\bower.json">
+      <PackagePath>www\lib\ionic-ratings\bower.json</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\totsamax\apps\BishkekTaxi\platforms\windows\www\lib\ionic-ratings\package.json">
+      <PackagePath>www\lib\ionic-ratings\package.json</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\totsamax\apps\BishkekTaxi\platforms\windows\www\lib\ionic\.bower.json">
+      <PackagePath>www\lib\ionic\.bower.json</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\totsamax\apps\BishkekTaxi\platforms\windows\www\lib\ionic\bower.json">
+      <PackagePath>www\lib\ionic\bower.json</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\totsamax\apps\BishkekTaxi\platforms\windows\www\lib\ionic\scss\tsconfig.json">
+      <PackagePath>www\lib\ionic\scss\tsconfig.json</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\totsamax\apps\BishkekTaxi\platforms\windows\www\lib\leaflet-control-geocoder\.bower.json">
+      <PackagePath>www\lib\leaflet-control-geocoder\.bower.json</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\totsamax\apps\BishkekTaxi\platforms\windows\www\lib\leaflet-control-geocoder\bower.json">
+      <PackagePath>www\lib\leaflet-control-geocoder\bower.json</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\totsamax\apps\BishkekTaxi\platforms\windows\www\lib\leaflet-routing-machine\.bower.json">
+      <PackagePath>www\lib\leaflet-routing-machine\.bower.json</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\totsamax\apps\BishkekTaxi\platforms\windows\www\lib\leaflet-routing-machine\bower.json">
+      <PackagePath>www\lib\leaflet-routing-machine\bower.json</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\totsamax\apps\BishkekTaxi\platforms\windows\www\lib\leaflet\.bower.json">
+      <PackagePath>www\lib\leaflet\.bower.json</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\totsamax\apps\BishkekTaxi\platforms\windows\www\lib\leaflet\bower.json">
+      <PackagePath>www\lib\leaflet\bower.json</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\totsamax\apps\BishkekTaxi\platforms\windows\www\lib\leaflet\component.json">
+      <PackagePath>www\lib\leaflet\component.json</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\totsamax\apps\BishkekTaxi\platforms\windows\www\lib\leaflet\package.json">
+      <PackagePath>www\lib\leaflet\package.json</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\totsamax\apps\BishkekTaxi\platforms\windows\www\lib\ngCordova\.bower.json">
+      <PackagePath>www\lib\ngCordova\.bower.json</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\totsamax\apps\BishkekTaxi\platforms\windows\www\lib\ngCordova\bower.json">
+      <PackagePath>www\lib\ngCordova\bower.json</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\totsamax\apps\BishkekTaxi\platforms\windows\www\lib\ngCordova\package.json">
+      <PackagePath>www\lib\ngCordova\package.json</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\totsamax\apps\BishkekTaxi\platforms\windows\www\lib\rsvp\.bower.json">
+      <PackagePath>www\lib\rsvp\.bower.json</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\totsamax\apps\BishkekTaxi\platforms\windows\www\lib\rsvp\bower.json">
+      <PackagePath>www\lib\rsvp\bower.json</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\totsamax\apps\BishkekTaxi\platforms\windows\www\lib\rsvp\composer.json">
+      <PackagePath>www\lib\rsvp\composer.json</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\totsamax\apps\BishkekTaxi\platforms\windows\www\lib\rsvp\package.json">
+      <PackagePath>www\lib\rsvp\package.json</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\totsamax\apps\BishkekTaxi\platforms\windows\www\lib\angular-animate\angular-animate.min.js.map">
+      <PackagePath>www\lib\angular-animate\angular-animate.min.js.map</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\totsamax\apps\BishkekTaxi\platforms\windows\www\lib\angular-sanitize\angular-sanitize.min.js.map">
+      <PackagePath>www\lib\angular-sanitize\angular-sanitize.min.js.map</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\totsamax\apps\BishkekTaxi\platforms\windows\www\lib\angular\angular.min.js.map">
+      <PackagePath>www\lib\angular\angular.min.js.map</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\totsamax\apps\BishkekTaxi\platforms\windows\www\lib\font-awesome\css\font-awesome.css.map">
+      <PackagePath>www\lib\font-awesome\css\font-awesome.css.map</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\totsamax\apps\BishkekTaxi\platforms\windows\www\lib\angular-animate\README.md">
+      <PackagePath>www\lib\angular-animate\README.md</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\totsamax\apps\BishkekTaxi\platforms\windows\www\lib\angular-google-places-autocomplete\README.md">
+      <PackagePath>www\lib\angular-google-places-autocomplete\README.md</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\totsamax\apps\BishkekTaxi\platforms\windows\www\lib\angular-sanitize\README.md">
+      <PackagePath>www\lib\angular-sanitize\README.md</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\totsamax\apps\BishkekTaxi\platforms\windows\www\lib\angular-ui-router\CHANGELOG.md">
+      <PackagePath>www\lib\angular-ui-router\CHANGELOG.md</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\totsamax\apps\BishkekTaxi\platforms\windows\www\lib\angular-ui-router\CONTRIBUTING.md">
+      <PackagePath>www\lib\angular-ui-router\CONTRIBUTING.md</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\totsamax\apps\BishkekTaxi\platforms\windows\www\lib\angular-ui-router\README.md">
+      <PackagePath>www\lib\angular-ui-router\README.md</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\totsamax\apps\BishkekTaxi\platforms\windows\www\lib\angularfire\README.md">
+      <PackagePath>www\lib\angularfire\README.md</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\totsamax\apps\BishkekTaxi\platforms\windows\www\lib\angularGeoFire\LICENSE.md">
+      <PackagePath>www\lib\angularGeoFire\LICENSE.md</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\totsamax\apps\BishkekTaxi\platforms\windows\www\lib\angularGeoFire\README.md">
+      <PackagePath>www\lib\angularGeoFire\README.md</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\totsamax\apps\BishkekTaxi\platforms\windows\www\lib\angular\README.md">
+      <PackagePath>www\lib\angular\README.md</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\totsamax\apps\BishkekTaxi\platforms\windows\www\lib\firebase\README.md">
+      <PackagePath>www\lib\firebase\README.md</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\totsamax\apps\BishkekTaxi\platforms\windows\www\lib\geofire\README.md">
+      <PackagePath>www\lib\geofire\README.md</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\totsamax\apps\BishkekTaxi\platforms\windows\www\lib\ionic-platform-web-client\CHANGELOG.md">
+      <PackagePath>www\lib\ionic-platform-web-client\CHANGELOG.md</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\totsamax\apps\BishkekTaxi\platforms\windows\www\lib\ionic-platform-web-client\README.md">
+      <PackagePath>www\lib\ionic-platform-web-client\README.md</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\totsamax\apps\BishkekTaxi\platforms\windows\www\lib\ionic-ratings\LICENSE.md">
+      <PackagePath>www\lib\ionic-ratings\LICENSE.md</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\totsamax\apps\BishkekTaxi\platforms\windows\www\lib\ionic-ratings\README.md">
+      <PackagePath>www\lib\ionic-ratings\README.md</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\totsamax\apps\BishkekTaxi\platforms\windows\www\lib\ionic\README.md">
+      <PackagePath>www\lib\ionic\README.md</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\totsamax\apps\BishkekTaxi\platforms\windows\www\lib\leaflet-control-geocoder\README.md">
+      <PackagePath>www\lib\leaflet-control-geocoder\README.md</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\totsamax\apps\BishkekTaxi\platforms\windows\www\lib\leaflet-routing-machine\CHANGELOG.md">
+      <PackagePath>www\lib\leaflet-routing-machine\CHANGELOG.md</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\totsamax\apps\BishkekTaxi\platforms\windows\www\lib\leaflet-routing-machine\README.md">
+      <PackagePath>www\lib\leaflet-routing-machine\README.md</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\totsamax\apps\BishkekTaxi\platforms\windows\www\lib\leaflet\CHANGELOG.md">
+      <PackagePath>www\lib\leaflet\CHANGELOG.md</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\totsamax\apps\BishkekTaxi\platforms\windows\www\lib\leaflet\CONTRIBUTING.md">
+      <PackagePath>www\lib\leaflet\CONTRIBUTING.md</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\totsamax\apps\BishkekTaxi\platforms\windows\www\lib\leaflet\PLUGIN-GUIDE.md">
+      <PackagePath>www\lib\leaflet\PLUGIN-GUIDE.md</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\totsamax\apps\BishkekTaxi\platforms\windows\www\lib\leaflet\README.md">
+      <PackagePath>www\lib\leaflet\README.md</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\totsamax\apps\BishkekTaxi\platforms\windows\www\lib\ngCordova\CHANGELOG.md">
+      <PackagePath>www\lib\ngCordova\CHANGELOG.md</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\totsamax\apps\BishkekTaxi\platforms\windows\www\lib\ngCordova\README.md">
+      <PackagePath>www\lib\ngCordova\README.md</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\totsamax\apps\BishkekTaxi\platforms\windows\www\lib\rsvp\README.md">
+      <PackagePath>www\lib\rsvp\README.md</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\totsamax\apps\BishkekTaxi\platforms\windows\www\lib\angular-google-places-autocomplete\.gitignore">
+      <PackagePath>www\lib\angular-google-places-autocomplete\.gitignore</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\totsamax\apps\BishkekTaxi\platforms\windows\www\lib\font-awesome\.gitignore">
+      <PackagePath>www\lib\font-awesome\.gitignore</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\totsamax\apps\BishkekTaxi\platforms\windows\www\lib\angular-google-places-autocomplete\LICENSE">
+      <PackagePath>www\lib\angular-google-places-autocomplete\LICENSE</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\totsamax\apps\BishkekTaxi\platforms\windows\www\lib\angular-ui-router\LICENSE">
+      <PackagePath>www\lib\angular-ui-router\LICENSE</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\totsamax\apps\BishkekTaxi\platforms\windows\www\lib\angularfire\LICENSE">
+      <PackagePath>www\lib\angularfire\LICENSE</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\totsamax\apps\BishkekTaxi\platforms\windows\www\lib\geofire\LICENSE">
+      <PackagePath>www\lib\geofire\LICENSE</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\totsamax\apps\BishkekTaxi\platforms\windows\www\lib\ionic-platform-web-client\LICENSE">
+      <PackagePath>www\lib\ionic-platform-web-client\LICENSE</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\totsamax\apps\BishkekTaxi\platforms\windows\www\lib\leaflet-control-geocoder\LICENSE">
+      <PackagePath>www\lib\leaflet-control-geocoder\LICENSE</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\totsamax\apps\BishkekTaxi\platforms\windows\www\lib\leaflet-routing-machine\LICENSE">
+      <PackagePath>www\lib\leaflet-routing-machine\LICENSE</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\totsamax\apps\BishkekTaxi\platforms\windows\www\lib\leaflet\LICENSE">
+      <PackagePath>www\lib\leaflet\LICENSE</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\totsamax\apps\BishkekTaxi\platforms\windows\www\lib\ngCordova\LICENSE">
+      <PackagePath>www\lib\ngCordova\LICENSE</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\totsamax\apps\BishkekTaxi\platforms\windows\www\lib\angular-ui-router\api\angular-ui-router.d.ts">
+      <PackagePath>www\lib\angular-ui-router\api\angular-ui-router.d.ts</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\totsamax\apps\BishkekTaxi\platforms\windows\www\lib\angular\angular.min.js.gzip">
+      <PackagePath>www\lib\angular\angular.min.js.gzip</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\totsamax\apps\BishkekTaxi\platforms\windows\www\lib\font-awesome\.npmignore">
+      <PackagePath>www\lib\font-awesome\.npmignore</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\totsamax\apps\BishkekTaxi\platforms\windows\www\lib\font-awesome\fonts\fontawesome-webfont.eot">
+      <PackagePath>www\lib\font-awesome\fonts\fontawesome-webfont.eot</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\totsamax\apps\BishkekTaxi\platforms\windows\www\lib\ionic\fonts\ionicons.eot">
+      <PackagePath>www\lib\ionic\fonts\ionicons.eot</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\totsamax\apps\BishkekTaxi\platforms\windows\www\lib\font-awesome\fonts\fontawesome-webfont.svg">
+      <PackagePath>www\lib\font-awesome\fonts\fontawesome-webfont.svg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\totsamax\apps\BishkekTaxi\platforms\windows\www\lib\ionic\fonts\ionicons.svg">
+      <PackagePath>www\lib\ionic\fonts\ionicons.svg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\totsamax\apps\BishkekTaxi\platforms\windows\www\lib\leaflet-routing-machine\dist\leaflet.routing.icons.svg">
+      <PackagePath>www\lib\leaflet-routing-machine\dist\leaflet.routing.icons.svg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\totsamax\apps\BishkekTaxi\platforms\windows\www\lib\font-awesome\fonts\fontawesome-webfont.ttf">
+      <PackagePath>www\lib\font-awesome\fonts\fontawesome-webfont.ttf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\totsamax\apps\BishkekTaxi\platforms\windows\www\lib\ionic\fonts\ionicons.ttf">
+      <PackagePath>www\lib\ionic\fonts\ionicons.ttf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\totsamax\apps\BishkekTaxi\platforms\windows\www\lib\font-awesome\fonts\fontawesome-webfont.woff">
+      <PackagePath>www\lib\font-awesome\fonts\fontawesome-webfont.woff</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\totsamax\apps\BishkekTaxi\platforms\windows\www\lib\ionic\fonts\ionicons.woff">
+      <PackagePath>www\lib\ionic\fonts\ionicons.woff</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\totsamax\apps\BishkekTaxi\platforms\windows\www\lib\font-awesome\fonts\fontawesome-webfont.woff2">
+      <PackagePath>www\lib\font-awesome\fonts\fontawesome-webfont.woff2</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\totsamax\apps\BishkekTaxi\platforms\windows\www\lib\font-awesome\fonts\FontAwesome.otf">
+      <PackagePath>www\lib\font-awesome\fonts\FontAwesome.otf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\totsamax\apps\BishkekTaxi\platforms\windows\www\lib\font-awesome\HELP-US-OUT.txt">
+      <PackagePath>www\lib\font-awesome\HELP-US-OUT.txt</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\totsamax\apps\BishkekTaxi\platforms\windows\www\lib\font-awesome\less\animated.less">
+      <PackagePath>www\lib\font-awesome\less\animated.less</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\totsamax\apps\BishkekTaxi\platforms\windows\www\lib\font-awesome\less\bordered-pulled.less">
+      <PackagePath>www\lib\font-awesome\less\bordered-pulled.less</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\totsamax\apps\BishkekTaxi\platforms\windows\www\lib\font-awesome\less\core.less">
+      <PackagePath>www\lib\font-awesome\less\core.less</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\totsamax\apps\BishkekTaxi\platforms\windows\www\lib\font-awesome\less\fixed-width.less">
+      <PackagePath>www\lib\font-awesome\less\fixed-width.less</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\totsamax\apps\BishkekTaxi\platforms\windows\www\lib\font-awesome\less\font-awesome.less">
+      <PackagePath>www\lib\font-awesome\less\font-awesome.less</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\totsamax\apps\BishkekTaxi\platforms\windows\www\lib\font-awesome\less\icons.less">
+      <PackagePath>www\lib\font-awesome\less\icons.less</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\totsamax\apps\BishkekTaxi\platforms\windows\www\lib\font-awesome\less\larger.less">
+      <PackagePath>www\lib\font-awesome\less\larger.less</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\totsamax\apps\BishkekTaxi\platforms\windows\www\lib\font-awesome\less\list.less">
+      <PackagePath>www\lib\font-awesome\less\list.less</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\totsamax\apps\BishkekTaxi\platforms\windows\www\lib\font-awesome\less\mixins.less">
+      <PackagePath>www\lib\font-awesome\less\mixins.less</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\totsamax\apps\BishkekTaxi\platforms\windows\www\lib\font-awesome\less\path.less">
+      <PackagePath>www\lib\font-awesome\less\path.less</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\totsamax\apps\BishkekTaxi\platforms\windows\www\lib\font-awesome\less\rotated-flipped.less">
+      <PackagePath>www\lib\font-awesome\less\rotated-flipped.less</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\totsamax\apps\BishkekTaxi\platforms\windows\www\lib\font-awesome\less\stacked.less">
+      <PackagePath>www\lib\font-awesome\less\stacked.less</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\totsamax\apps\BishkekTaxi\platforms\windows\www\lib\font-awesome\less\variables.less">
+      <PackagePath>www\lib\font-awesome\less\variables.less</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\totsamax\apps\BishkekTaxi\platforms\windows\www\lib\font-awesome\scss\font-awesome.scss">
+      <PackagePath>www\lib\font-awesome\scss\font-awesome.scss</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\totsamax\apps\BishkekTaxi\platforms\windows\www\lib\font-awesome\scss\_animated.scss">
+      <PackagePath>www\lib\font-awesome\scss\_animated.scss</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\totsamax\apps\BishkekTaxi\platforms\windows\www\lib\font-awesome\scss\_bordered-pulled.scss">
+      <PackagePath>www\lib\font-awesome\scss\_bordered-pulled.scss</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\totsamax\apps\BishkekTaxi\platforms\windows\www\lib\font-awesome\scss\_core.scss">
+      <PackagePath>www\lib\font-awesome\scss\_core.scss</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\totsamax\apps\BishkekTaxi\platforms\windows\www\lib\font-awesome\scss\_fixed-width.scss">
+      <PackagePath>www\lib\font-awesome\scss\_fixed-width.scss</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\totsamax\apps\BishkekTaxi\platforms\windows\www\lib\font-awesome\scss\_icons.scss">
+      <PackagePath>www\lib\font-awesome\scss\_icons.scss</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\totsamax\apps\BishkekTaxi\platforms\windows\www\lib\font-awesome\scss\_larger.scss">
+      <PackagePath>www\lib\font-awesome\scss\_larger.scss</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\totsamax\apps\BishkekTaxi\platforms\windows\www\lib\font-awesome\scss\_list.scss">
+      <PackagePath>www\lib\font-awesome\scss\_list.scss</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\totsamax\apps\BishkekTaxi\platforms\windows\www\lib\font-awesome\scss\_mixins.scss">
+      <PackagePath>www\lib\font-awesome\scss\_mixins.scss</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\totsamax\apps\BishkekTaxi\platforms\windows\www\lib\font-awesome\scss\_path.scss">
+      <PackagePath>www\lib\font-awesome\scss\_path.scss</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\totsamax\apps\BishkekTaxi\platforms\windows\www\lib\font-awesome\scss\_rotated-flipped.scss">
+      <PackagePath>www\lib\font-awesome\scss\_rotated-flipped.scss</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\totsamax\apps\BishkekTaxi\platforms\windows\www\lib\font-awesome\scss\_stacked.scss">
+      <PackagePath>www\lib\font-awesome\scss\_stacked.scss</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\totsamax\apps\BishkekTaxi\platforms\windows\www\lib\font-awesome\scss\_variables.scss">
+      <PackagePath>www\lib\font-awesome\scss\_variables.scss</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\totsamax\apps\BishkekTaxi\platforms\windows\www\lib\ionic\scss\ionic.scss">
+      <PackagePath>www\lib\ionic\scss\ionic.scss</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\totsamax\apps\BishkekTaxi\platforms\windows\www\lib\ionic\scss\ionicons\ionicons.scss">
+      <PackagePath>www\lib\ionic\scss\ionicons\ionicons.scss</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\totsamax\apps\BishkekTaxi\platforms\windows\www\lib\ionic\scss\ionicons\_ionicons-font.scss">
+      <PackagePath>www\lib\ionic\scss\ionicons\_ionicons-font.scss</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\totsamax\apps\BishkekTaxi\platforms\windows\www\lib\ionic\scss\ionicons\_ionicons-icons.scss">
+      <PackagePath>www\lib\ionic\scss\ionicons\_ionicons-icons.scss</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\totsamax\apps\BishkekTaxi\platforms\windows\www\lib\ionic\scss\ionicons\_ionicons-variables.scss">
+      <PackagePath>www\lib\ionic\scss\ionicons\_ionicons-variables.scss</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\totsamax\apps\BishkekTaxi\platforms\windows\www\lib\ionic\scss\_action-sheet.scss">
+      <PackagePath>www\lib\ionic\scss\_action-sheet.scss</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\totsamax\apps\BishkekTaxi\platforms\windows\www\lib\ionic\scss\_animations.scss">
+      <PackagePath>www\lib\ionic\scss\_animations.scss</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\totsamax\apps\BishkekTaxi\platforms\windows\www\lib\ionic\scss\_backdrop.scss">
+      <PackagePath>www\lib\ionic\scss\_backdrop.scss</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\totsamax\apps\BishkekTaxi\platforms\windows\www\lib\ionic\scss\_badge.scss">
+      <PackagePath>www\lib\ionic\scss\_badge.scss</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\totsamax\apps\BishkekTaxi\platforms\windows\www\lib\ionic\scss\_bar.scss">
+      <PackagePath>www\lib\ionic\scss\_bar.scss</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\totsamax\apps\BishkekTaxi\platforms\windows\www\lib\ionic\scss\_button-bar.scss">
+      <PackagePath>www\lib\ionic\scss\_button-bar.scss</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\totsamax\apps\BishkekTaxi\platforms\windows\www\lib\ionic\scss\_button.scss">
+      <PackagePath>www\lib\ionic\scss\_button.scss</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\totsamax\apps\BishkekTaxi\platforms\windows\www\lib\ionic\scss\_checkbox.scss">
+      <PackagePath>www\lib\ionic\scss\_checkbox.scss</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\totsamax\apps\BishkekTaxi\platforms\windows\www\lib\ionic\scss\_form.scss">
+      <PackagePath>www\lib\ionic\scss\_form.scss</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\totsamax\apps\BishkekTaxi\platforms\windows\www\lib\ionic\scss\_grid.scss">
+      <PackagePath>www\lib\ionic\scss\_grid.scss</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\totsamax\apps\BishkekTaxi\platforms\windows\www\lib\ionic\scss\_items.scss">
+      <PackagePath>www\lib\ionic\scss\_items.scss</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\totsamax\apps\BishkekTaxi\platforms\windows\www\lib\ionic\scss\_list.scss">
+      <PackagePath>www\lib\ionic\scss\_list.scss</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\totsamax\apps\BishkekTaxi\platforms\windows\www\lib\ionic\scss\_loading.scss">
+      <PackagePath>www\lib\ionic\scss\_loading.scss</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\totsamax\apps\BishkekTaxi\platforms\windows\www\lib\ionic\scss\_menu.scss">
+      <PackagePath>www\lib\ionic\scss\_menu.scss</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\totsamax\apps\BishkekTaxi\platforms\windows\www\lib\ionic\scss\_mixins.scss">
+      <PackagePath>www\lib\ionic\scss\_mixins.scss</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\totsamax\apps\BishkekTaxi\platforms\windows\www\lib\ionic\scss\_modal.scss">
+      <PackagePath>www\lib\ionic\scss\_modal.scss</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\totsamax\apps\BishkekTaxi\platforms\windows\www\lib\ionic\scss\_platform.scss">
+      <PackagePath>www\lib\ionic\scss\_platform.scss</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\totsamax\apps\BishkekTaxi\platforms\windows\www\lib\ionic\scss\_popover.scss">
+      <PackagePath>www\lib\ionic\scss\_popover.scss</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\totsamax\apps\BishkekTaxi\platforms\windows\www\lib\ionic\scss\_popup.scss">
+      <PackagePath>www\lib\ionic\scss\_popup.scss</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\totsamax\apps\BishkekTaxi\platforms\windows\www\lib\ionic\scss\_progress.scss">
+      <PackagePath>www\lib\ionic\scss\_progress.scss</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\totsamax\apps\BishkekTaxi\platforms\windows\www\lib\ionic\scss\_radio.scss">
+      <PackagePath>www\lib\ionic\scss\_radio.scss</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\totsamax\apps\BishkekTaxi\platforms\windows\www\lib\ionic\scss\_range.scss">
+      <PackagePath>www\lib\ionic\scss\_range.scss</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\totsamax\apps\BishkekTaxi\platforms\windows\www\lib\ionic\scss\_refresher.scss">
+      <PackagePath>www\lib\ionic\scss\_refresher.scss</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\totsamax\apps\BishkekTaxi\platforms\windows\www\lib\ionic\scss\_reset.scss">
+      <PackagePath>www\lib\ionic\scss\_reset.scss</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\totsamax\apps\BishkekTaxi\platforms\windows\www\lib\ionic\scss\_scaffolding.scss">
+      <PackagePath>www\lib\ionic\scss\_scaffolding.scss</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\totsamax\apps\BishkekTaxi\platforms\windows\www\lib\ionic\scss\_select.scss">
+      <PackagePath>www\lib\ionic\scss\_select.scss</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\totsamax\apps\BishkekTaxi\platforms\windows\www\lib\ionic\scss\_slide-box.scss">
+      <PackagePath>www\lib\ionic\scss\_slide-box.scss</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\totsamax\apps\BishkekTaxi\platforms\windows\www\lib\ionic\scss\_slides.scss">
+      <PackagePath>www\lib\ionic\scss\_slides.scss</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\totsamax\apps\BishkekTaxi\platforms\windows\www\lib\ionic\scss\_spinner.scss">
+      <PackagePath>www\lib\ionic\scss\_spinner.scss</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\totsamax\apps\BishkekTaxi\platforms\windows\www\lib\ionic\scss\_tabs.scss">
+      <PackagePath>www\lib\ionic\scss\_tabs.scss</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\totsamax\apps\BishkekTaxi\platforms\windows\www\lib\ionic\scss\_toggle.scss">
+      <PackagePath>www\lib\ionic\scss\_toggle.scss</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\totsamax\apps\BishkekTaxi\platforms\windows\www\lib\ionic\scss\_transitions.scss">
+      <PackagePath>www\lib\ionic\scss\_transitions.scss</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\totsamax\apps\BishkekTaxi\platforms\windows\www\lib\ionic\scss\_type.scss">
+      <PackagePath>www\lib\ionic\scss\_type.scss</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\totsamax\apps\BishkekTaxi\platforms\windows\www\lib\ionic\scss\_util.scss">
+      <PackagePath>www\lib\ionic\scss\_util.scss</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\totsamax\apps\BishkekTaxi\platforms\windows\www\lib\ionic\scss\_variables.scss">
+      <PackagePath>www\lib\ionic\scss\_variables.scss</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\totsamax\apps\BishkekTaxi\platforms\windows\www\lib\ionic-ratings\ionic.project">
+      <PackagePath>www\lib\ionic-ratings\ionic.project</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\totsamax\apps\BishkekTaxi\platforms\windows\www\lib\leaflet-routing-machine\scripts\publish.sh">
+      <PackagePath>www\lib\leaflet-routing-machine\scripts\publish.sh</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\totsamax\apps\BishkekTaxi\platforms\windows\config.xml">
+      <PackagePath>config.xml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\totsamax\apps\BishkekTaxi\platforms\windows\build\windows\debug\anycpu\win8.1\resources.pri">
+      <PackagePath>resources.pri</PackagePath>
+    </AppxPackagedFile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows\v8.1\ExtensionSDKs\Microsoft.WinJS.2.0\1.0\">
+      <Name>Microsoft.WinJS.2.0</Name>
+      <Version>1.0.9600.17018</Version>
+      <Architecture>Neutral</Architecture>
+      <FrameworkIdentity>Name=Microsoft.WinJS.2.0, MinVersion=1.0.9600.17018</FrameworkIdentity>
+      <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\Windows\v8.1\ExtensionSDKs\Microsoft.WinJS.2.0\1.0\Microsoft.WinJS.2.0.appx</AppxLocation>
+      <MoreInfo>http://go.microsoft.com/fwlink/%3fLinkId=260891</MoreInfo>
+    </ResolvedSDKReference>
+  </ItemGroup>
+</Project>
